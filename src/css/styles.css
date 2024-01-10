@@ -28,7 +28,6 @@ body {
 
 .section-1 {
     display: flex;
-    margin: 10vh;
 }
 
 .logo-section-1 {
@@ -98,7 +97,29 @@ body {
     letter-spacing: -0.64px;
 }
 
+/* section 2 */
 
+.section-2 {
+    background-color: #F06292;
+    display: flex;
+}
+
+.left-section-2 {
+    width: 30vw;
+}
+
+.card-section-2 {
+    display: flex;
+    width: 30vw;
+    height: 20vh;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FFF;
+}
+
+.instrument {
+    width: 20vw;
+}
 
 
 
