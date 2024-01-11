@@ -1,5 +1,9 @@
 *{
-    margin:0px;}
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+} 
+
 /* NAV BAR */
 header {
     background-color: #EB4138;
@@ -12,16 +16,20 @@ header {
   }
   
   .logo img {
-    height: 60px; /* Ajusta la altura del logo según tus necesidades */
+    height: auto; /* Ajusta la altura del logo según tus necesidades */
+    max-width: 100px ;
+    margin-left: 120px;
   }
   
   nav ul {
     list-style: none;
     display: flex;
+    margin-right: 80px;
+    font-family:'Merriweather', serif;
   }
   
   nav ul li {
-    margin-right: 40px;
+    margin-right: 50px;
  
   }
   
@@ -51,22 +59,70 @@ header {
       margin-bottom: 10px;
     }
   }
+/* FIN NAV BAR */
 
 /* CSS ABOUT US PAGE*/
-.profesors-container-sara {
-}
-.background-rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3498db; /* Color de la forma geométrica */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Forma geométrica, aquí un rectángulo */
+
+  .introductory-text {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .palabra-destacada{
+    font-weight: bold ;
+    color:#FAC348;
+    display:flex;
+  }
+  .sara{
+    background-color: #F06292;
+    display: flex;
+    align-items: ;
+    z-index: -1;
+  }
+
+  .background-rectangle {
+  width:600px;
+  height:300px;
+  background-color: #FAC348;
   z-index: -1; /* Colocar la forma detrás de la imagen */
-}
+  }
+  .teachers-img {
+    max-width:250px;
+    height:auto;
+    position: relative; /* Asegurarse de que la imagen esté en su posición original */
+    z-index: 1; /* Colocar la imagen sobre el fondo */
+  }
+  .teachers-names {
+    font-family: 'Montserrat', sans-serif;
+    color: #EB4138;
+    display: flex;
+    align-content: center;
+  }
+  .teachers-instrument {
+    font-family: 'Merriweather', serif;
+    color:#F06292;
+    display: flex;
+    align-content: center;
+  }
+
+  .teacher-description{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: px;
+    margin-right: px;
+    padding-top: px;
+    padding-bottom: px;
+    text-align: center;
+  }
 
 
-
+/* color rosa#F06292    color amarillo #FAC348*/
+/*font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+*/
 
 /* END CSS ABOUT US PAGE*/
