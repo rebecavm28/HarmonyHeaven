@@ -8,7 +8,7 @@ body {
 
 /* colors */
 
-.orange {
+/* .orange {
     color: #EB4138
 }
 
@@ -46,7 +46,7 @@ body {
 
 .lightpink-bg {
     background-color: #F389AD
-}
+} */
 
 
 /* header */
@@ -112,6 +112,7 @@ body {
 }
 
 .highlight-text {
+    color: #FAC348;
     font-family: Montserrat;
     font-size: 2rem;
     font-style: normal;
@@ -154,24 +155,16 @@ body {
     width: 30vw;
 }
 
-.card-section-2 {
+.pair-cards-section-2 {
     display: flex;
     width: 25vw;
     height: 60vh;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: #FFF;
-}
-
-.rectangle {
-    width: 30vh;
-    height: 30vh;
-    flex-shrink: 0;
-    border-radius: 40px;
+    
 }
 
 .instrument {
-    width: 15vw;
+    width: 30vh;
+    height: 30vh;
 }
 
 .card-title {
