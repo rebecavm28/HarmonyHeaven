@@ -156,10 +156,7 @@ body {
 }
 
 .pair-cards-section-2 {
-    display: flex;
-    width: 25vw;
-    height: 60vh;
-    
+    display: flex; 
 }
 
 .instrument {
