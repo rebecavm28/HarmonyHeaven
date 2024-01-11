@@ -6,6 +6,49 @@ body {
     padding: 0;
 }
 
+/* colors */
+
+.orange {
+    color: #EB4138
+}
+
+.orange-bg {
+    background-color: #EB4138;
+}
+
+.pink {
+    color: #F06292;
+}
+
+.pink-bg {
+    background-color: #F06292;
+}
+
+.yellow {
+    color: #FAC348;
+}
+
+.yellow-bg {
+    background-color: #FAC348;
+}
+
+.grey {
+    color: #D9D9D9;
+}
+
+.grey-bg {
+    background-color: #D9D9D9;
+}
+
+.light-pink {
+    color: #F389AD;
+}
+
+.lightpink-bg {
+    background-color: #F389AD
+}
+
+
 /* header */
 
 .nav-bar {
@@ -68,8 +111,7 @@ body {
     text-align: center;
 }
 
-.yellow {
-    color: #FAC348;
+.highlight-text {
     font-family: Montserrat;
     font-size: 2rem;
     font-style: normal;
@@ -104,22 +146,53 @@ body {
     display: flex;
 }
 
+.cards-section-2 {
+    display:flex;
+}
+
 .left-section-2 {
     width: 30vw;
 }
 
 .card-section-2 {
     display: flex;
-    width: 30vw;
-    height: 20vh;
+    width: 25vw;
+    height: 60vh;
     flex-shrink: 0;
     border-radius: 40px;
     background: #FFF;
 }
 
-.instrument {
-    width: 20vw;
+.rectangle {
+    width: 30vh;
+    height: 30vh;
+    flex-shrink: 0;
+    border-radius: 40px;
 }
+
+.instrument {
+    width: 15vw;
+}
+
+.card-title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 2rem;font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    }
+
+.card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+
 
 
 
