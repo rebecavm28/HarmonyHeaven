@@ -83,3 +83,55 @@ img {
     color:black;
     text-decoration: none;
 }
+
+/* 404 imagen */
+
+.construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-404 {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.subtitle-404 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* footer */
+footer {
+    background-color: #EB4138;
+    text-align: center;
+    height: 25vh;
+}
+
+.social-icons {
+    margin-top: 2vh;
+}
+
+.hr {
+    width: 80%;
+    margin: 2% auto;
+    color: #FFF;
+}
+
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    color: #FFF;
+}
+
+/* fin footer */
