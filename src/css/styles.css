@@ -2,127 +2,81 @@
   margin:0;
   padding: 0;
   box-sizing:border-box;
-} 
+} /*si ponermos el * en vez de body, el logo se modifica*/
+/*AQUI EMPIEZA LA NAV BAR*/
+.logo {
+  position: absolute;
+  z-index: 1;
+}
 
-/* NAV BAR */
-header {
-    background-color: #EB4138;
-    color: #050000;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border:none;
-  }
-  
-  .logo img {
-    height: auto; /* Ajusta la altura del logo según tus necesidades */
-    max-width: 100px ;
-    margin-left: 120px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin-right: 80px;
-    font-family:'Merriweather', serif;
-  }
-  
-  nav ul li {
-    margin-right: 50px;
- 
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #050505;
-  
-  }
-  
-  /* Estilos para adaptar la barra de navegación en dispositivos pequeños (responsive) */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav {
-      margin-top: 10px;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-/* FIN NAV BAR */
+.logo img{
+  width:100px;
+  height: auto;
+  padding-left: 4em; /*Para dar margen izquierdo al logo*/
+  margin-top: 8%;
+}
 
-/* CSS ABOUT US PAGE*/
+@media screen and (max-width: 768px) {
+  .logo {
+      display: none; /* Oculta el logo en pantallas más grandes */
+  }
+}
+img {
+  max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
+}
 
-  .introductory-text {
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 140px;
-    margin-right: 140px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
+.toggle-menu{
+  position: absolute;/*Para que pierda su contenido en el flujo con esto ya puedo usar z index*/
+  top:0.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  /*filter: invert(1);  esto es solo si quisiera cambiar de color a blanco el menu hamurguesa*/
+  width: 40px;
+  z-index: 1;
+}
 
-  .palabra-destacada{
-    font-weight: bold ;
-    color:#FAC348;
-    display:flex;
+@media screen and (min-width:768px) {
+  .toggle-menu{
+      display: none;
   }
-  .sara{
-    background-color: #F06292;
-    display: flex;
-    align-items: ;
-    z-index: -1;
-  }
+}
 
-  .background-rectangle {
-  width:600px;
-  height:300px;
-  background-color: #FAC348;
-  z-index: -1; /* Colocar la forma detrás de la imagen */
-  }
-  .teachers-img {
-    max-width:250px;
-    height:auto;
-    position: relative; /* Asegurarse de que la imagen esté en su posición original */
-    z-index: 1; /* Colocar la imagen sobre el fondo */
-  }
-  .teachers-names {
-    font-family: 'Montserrat', sans-serif;
-    color: #EB4138;
-    display: flex;
-    align-content: center;
-  }
-  .teachers-instrument {
-    font-family: 'Merriweather', serif;
-    color:#F06292;
-    display: flex;
-    align-content: center;
-  }
+.main-menu{
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
-  .teacher-description{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: px;
-    margin-right: px;
-    padding-top: px;
-    padding-bottom: px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#EB4138;
+  transition: transform 0.3s; /*Es la mejor forma de animar el ccs, nunca con padding ni margin!*/
+  transform: translateY(-100%);
+}
+
+.main-menu--show{
+  transform: translateY(0); /*con esto consigo que el menu se quede en el centro*/
+} /*Esta es la clase que vamos a cambiar desde javascript para que se muestre el menu clickando en el menu hamburguesa*/
+
+@media screen and (min-width:768px) {
+  .main-menu{
+      flex-direction: row;
+      justify-content: flex-end;
+      transform: translateY(0); /*Esto lo pongo para que semustre mimenu aunque en el modo menu hamburguesa para l movil lo haya ocultado*/
+      height: 100px; /*la altura de mi navbar*/
+      padding-right: 4em;/* para dar margen derecho a Contacto*/
   }
+}
 
+.main-menu_item{
+  padding: 1em;
+  font-family: 'Merriweather', serif;
+}
 
-/* color rosa#F06292    color amarillo #FAC348*/
-/*font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-*/
+.main-menu_link{
+  color:black;
+  text-decoration: none;
+}
 
-/* END CSS ABOUT US PAGE*/
+/*AQUI TERMINA LA NAV BAR*/
