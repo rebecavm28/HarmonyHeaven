@@ -118,10 +118,10 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
-    margin-top: 20px;
+    width: 60%;
+    margin-top: 10px;
     border-radius: 20px;
-    padding: 10px;
+    padding: -20%;
     background-color: black;
     color: #a2a2a2;
 }
@@ -131,7 +131,7 @@ h1{
     justify-content: center;
     align-items: normal;
     flex-wrap: nowrap;
-    width: 40%;
+    width: 60%;
     /* Ajusta el ancho del piano igual al del wrapper */
 }
 
@@ -153,20 +153,18 @@ h1{
     right:40px;
 }
 
-.intro{
-  font-size: 30px;
+.titulo2{
+  font-size: 200%;
   color: #F06292;
 }
+
 
 .description{
   font-size: 24px;
   margin: 7px;
 }
 
-.oculta{
-  font-size: 30px;
-  color: #F06292;
-}
+
 
 .description2{
   font-size: 24px;
@@ -181,4 +179,16 @@ h1{
   font-size: 24px;
 }
 
+.titulo3{
+  font-size: 200%;
+  color: #F06292;
+}
 
+.titulo4 {
+  font-size: 200%;
+  color: #F06292;
+}
+
+.tecladoins{
+  width: 50%;
+}
