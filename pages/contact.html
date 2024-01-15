@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -13,24 +14,54 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-          <img src="/public/assets/imagenes/logo harmony heaven 1.svg" alt="Logo">
-        </div>
-        <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/instrument.html">Instrumentos</a></li>
-            <li><a href="/pages/aboutus.html">Sobre nosotros</a></li>
-            <li><a href="/pages/contact.html">Contacto</a></li>
+        <!--NAVBAR-->
+        <nav class="main-nav"> 
+            <div id="toggle-menu" class="toggle-menu">
+                <img src="/public/assets/imagenes/hamburger-icon.png" alt="">
+            </div>
+            <div id="logo" class="logo">
+                <img src="/public/assets/imagenes/logo harmony heaven 1.svg" alt="Logo">
+            </div>
+          <ul id="main-menu"   class="main-menu">
+            <li class="main-menu_item">
+                <a href="#" class="main-menu_link">Home</a>
+            </li>
+            <li class="main-menu_item">
+                <a href="#" class="main-menu_link">Instrumentos</a>
+            </li>
+            <li class="main-menu_item">
+                <a href="#" class="main-menu_link">Sobre Nosotros</a>
+            </li>
+            <li class="main-menu_item">
+                <a href="#" class="main-menu_link">Contacto</a>
+            </li>
           </ul>
         </nav>
     </header>
+    <!--SECTION 1-->
     <section class="section-contact">
+        <!--CONTACT INFO-->
+        <article class="section-left-contact">
+            <h1 class="contact-title">CONTACT INFO</h1>
+            <p class="contact-text">Harmony Heaven</p>
+
+            <h1 class="contact-title">CORREO ELECTRÓNICO</h1>
+            <p class="contact-text">info@harmonyheaven.com</p>
+
+            <h1 class="contact-title">TELÉFONO</h1>
+            <p class="contact-text">910 45 22 30</p>
+
+            <h1 class="contact-title">UBICACIÓN</h1> 
+            <p class="contact-text">Calle de la Música, 6,<br> Madrid, 28037</p>
+
+            <img src="/public/assets/imagenes/singer-illustration.svg" alt="girl singing illustration" class="img-singer">
+        </article>
+        <!--CONTACT FORM-->
         <article class="section-right-form">
             <h1 class="h1-contact">Contáctanos</h1>
             <form action="/procesar_formulario" method="post" enctype="multipart/form-data" class="contact-form">
                 <label for="nombre"></label>
-                <input type="text" class="name-form" id="nombre" name="nombre" required placeholder="Nombre(*)">
+                <input type="text" class="name-form" id="nombre" name="nombre" required placeholder="Nombre(*)"><br>
 
                 <label for="apellidos"></label>
                 <input type="text" class="surname-form" id="apellidos" name="apellidos" required placeholder="Apellidos(*)"><br>
@@ -47,36 +78,16 @@
                 <input type="submit" class="enviar" value="Enviar">
             </form>
         </article>
-    
-        <article class="section-left-contact">
-            <h1 class="contact-title">CONTACT INFO</h1>
-            <p class="contact-text">Harmony Heaven</p>
-
-            <h1 class="contact-title">CORREO ELECTRÓNICO</h1>
-            <p class="contact-text">info@harmonyheaven.com</p>
-
-            <h1 class="contact-title">TELÉFONO</h1>
-            <p class="contact-text">910 45 22 30</p>
-
-            <h1 class="contact-title">UBICACIÓN</h1> 
-            <p class="contact-text">Calle de la Música, 6,<br> Madrid, 28037</p>
-
-            <img src="/public/assets/imagenes/singer-illustration.svg" alt="girl singing illustration">
-        </article>
     </section>
-    
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3071940713207!2d-3.623375100000001!3d40.4241962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f784732c7ab%3A0xa419af52952544b9!2sC.%20de%20la%20M%C3%BAsica%2C%206%2C%20San%20Blas-Canillejas%2C%2028037%20Madrid!5e0!3m2!1ses!2ses!4v1704966190689!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--SECTION 2 GOOGLE MAPS-->
+    <section class="section-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3071940713207!2d-3.623375100000001!3d40.4241962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f784732c7ab%3A0xa419af52952544b9!2sC.%20de%20la%20M%C3%BAsica%2C%206%2C%20San%20Blas-Canillejas%2C%2028037%20Madrid!5e0!3m2!1ses!2ses!4v1704966190689!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map" ></iframe>
     </section>
-
+    <!--FOOTER-->
     <footer>
-        <div class="social"></div>
-            <a href="https://www.facebook.com/"><img src="/public/assets/iconos/facebook.svg" alt="Facebook Icon"></a>
-            <a href="https://twitter.com/?lang=es"><img src="/public/assets/iconos/twitter.svg" alt="Twitter Icon"></a>
-            <a href="https://es.linkedin.com/"><img src="/public/assets/iconos/linkedin.svg" alt="LinkedIn Icon"></a>           
-        </div>
-        <hr>
-        <p class="copyright-text">@Copyright 2024 Harmony Heaven · Todos los derechos reservados</p>
+            <img src="./public/assets/iconos/social icons.svg" alt="iconos de las redes sociales de nuestra empresa HarmonyHeaven" class="social-icons">
+            <hr class="hr">
+            <p class="copyright">@Copyright 2024 Harmony Heaven · Todos los derechos reservados</p>
     </footer>
 </body>
 </html>

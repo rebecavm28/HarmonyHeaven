@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  /*-------AQUI EMPIEZA LA NAV BAR-------*/
+  .logo {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .logo img{
+    width:160px;
+    height: auto;
+    padding-left: 4em; /*Para dar margen izquierdo al logo*/
+    margin-top: 8%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+        display: none; /* Oculta el logo en pantallas más grandes */
+    }
+  }
+  img {
+    max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
+  }
+  
+  .toggle-menu{
+    position: absolute;/*Para que pierda su contenido en el flujo con esto ya puedo usar z index*/
+    top:0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    /*filter: invert(1);  esto es solo si quisiera cambiar de color a blanco el menu hamurguesa*/
+    width: 40px;
+    z-index: 1;
+  }
+  
+  @media screen and (min-width:768px) {
+    .toggle-menu{
+        display: none;
+    }
+  }
+  
+  .main-menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#EB4138;
+    transition: transform 0.3s; /*Es la mejor forma de animar el ccs, nunca con padding ni margin!*/
+    transform: translateY(-100%);
+  }
+  
+  .main-menu--show{
+    transform: translateY(0); /*con esto consigo que el menu se quede en el centro*/
+  } /*Esta es la clase que vamos a cambiar desde javascript para que se muestre el menu clickando en el menu hamburguesa*/
+  
+  @media screen and (min-width:768px) {
+    .main-menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0); /*Esto lo pongo para que semustre mimenu aunque en el modo menu hamburguesa para l movil lo haya ocultado*/
+        height: 100px; /*la altura de mi navbar*/
+        padding-right: 4em;/* para dar margen derecho a Contacto*/
+    }
+  }
+  
+  .main-menu_item{
+    padding: 1em;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .main-menu_link{
+    color:black;
+    text-decoration: none;
+  }
+  
+/*-------AQUI TERMINA LA NAV BAR-------*/
+
+/*------ MOBILE FIRST ------*/
+/*-------EMPIEZA PÁGINA DE CONTACTO-------*/
+
+.section-contact {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+}
+
+.section-right-form { /*formulario*/
+    background-color: #FAC348;
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    margin-bottom: 5%;
+}
+
+.h1-contact {
+    text-align: left;
+    font-size: 3.5rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.name-form {
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 2% 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+    margin-bottom: 1rem;
+}
+
+.surname-form {
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 2% 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+    margin-bottom: 1rem;
+}
+
+.email-form {
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 2% 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+    margin-bottom: 1rem;
+}
+
+.phone-form { 
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 2% 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+    margin-bottom: 1rem;
+}
+
+.message-form{
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 2% 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+    margin-bottom: 1rem;
+}
+
+.enviar { /*botón de enviar formulario */
+    background-color: #000000;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.50rem;
+    margin-top: 1.25rem;
+    border-style: none;
+}
+
+.section-left-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    color: #F06292;
+    line-height: normal;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.contact-text {
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    color: #000000;
+    line-height: normal;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.img-singer {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 40%;
+}
+
+.section-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.google-map {
+    width: 90%;
+    height: 10rem;
+}
+/*-------AQUI EMPIEZA EL FOOTER -------*/
+
+footer {
+    background-color: #EB4138;
+    text-align: center;
+    height: 25vh;
+}
+
+.social-icons {
+    margin-top: 2vh;
+}
+
+.hr {
+    width: 80%;
+    margin: 2% auto;
+    color: #FFF;
+}
+
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6rem;
+    font-style: normal;
+    color: #FFF;
+}
+
+/* -------------------------------------RESPONSIVE DESKTOP-----------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+.section-contact { 
+    display: grid; /*estructura en grid de la sección*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6rem;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.section-right-form { /* estructura formulario de contacto*/
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.section-left-contact { /*estructura info contacto*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.h1-contact {
+    font-size: 4rem;
+}
+
+.img-singer {
+    width: 80%;
+}
+
+.section-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-map {
+    width: 90%;
+    height: 20rem;
+}
+
+.copyright {
+    font-size: 1rem
+}
+}
