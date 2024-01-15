@@ -1,221 +1,331 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing:border-box;
-} /*si ponermos el * en vez de body, el logo se modifica*/
-/*AQUI EMPIEZA LA NAV BAR*/
-.logo {
-  position: absolute;
-  z-index: 1;
+
+
+
+/* section 1 */
+.section-1 {
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
 }
 
-.logo img{
-  width:160px;
-  height: auto;
-  padding-left: 4em; /*Para dar margen izquierdo al logo*/
-  margin-top: 8%;
+.logo-section-1 {
+    display: flex;
+    width: 16vw;
+    height: 26vh;
 }
 
-@media screen and (max-width: 768px) {
-  .logo {
-      display: none; /* Oculta el logo en pantallas más grandes */
-  }
-}
-img {
-  max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
+.left-section-1 {
+    display: flex;
+    flex-direction: column;
 }
 
-.toggle-menu{
-  position: absolute;/*Para que pierda su contenido en el flujo con esto ya puedo usar z index*/
-  top:0.5rem;
-  right: 1.5rem;
-  cursor: pointer;
-  /*filter: invert(1);  esto es solo si quisiera cambiar de color a blanco el menu hamurguesa*/
-  width: 40px;
-  z-index: 1;
+.img-musicians {
+    width: 50vw;
 }
 
-@media screen and (min-width:768px) {
-  .toggle-menu{
-      display: none;
-  }
+.img-musician {
+    width: 16vw;
 }
 
-.main-menu{
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:#EB4138;
-  transition: transform 0.3s; /*Es la mejor forma de animar el ccs, nunca con padding ni margin!*/
-  transform: translateY(-100%);
+.img-logo {
+    background-color: #EB4138;
+    color: #050000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.main-menu--show{
-  transform: translateY(0); /*con esto consigo que el menu se quede en el centro*/
-} /*Esta es la clase que vamos a cambiar desde javascript para que se muestre el menu clickando en el menu hamburguesa*/
-
-@media screen and (min-width:768px) {
-  .main-menu{
-      flex-direction: row;
-      justify-content: flex-end;
-      transform: translateY(0); /*Esto lo pongo para que semustre mimenu aunque en el modo menu hamburguesa para l movil lo haya ocultado*/
-      height: 100px; /*la altura de mi navbar*/
-      padding-right: 4em;/* para dar margen derecho a Contacto*/
-  }
+.right-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
 }
 
-.main-menu_item{
-  padding: 1em;
-  font-family: 'Merriweather', serif;
-}
-
-.main-menu_link{
-  color:black;
-  text-decoration: none;
-}
-
-/*AQUI TERMINA LA NAV BAR*/
- 
-/*INSTRUMENT*/
-body {
+.intro {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
     text-align: center;
 }
 
-img{
-  margin-top: 5%;
-}
-h1{
-    font-size: 50px;
-    width: 99%;
-    margin-top: 100px;
-    margin-left: 40px;
-}
-
-
-.colorido{
-    color:#FAC348 ;
+.highlight-text {
+    color: #FAC348;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.96px;
 }
 
-.vol,
-.tran,
-.not {
-    font-size: 30px;
+.button-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 2px 0px #EB4138;
 }
 
-.key {
-    height: 200px;
-    width: 100%;
-    border: 1px solid #000;
-    cursor: pointer;
-    margin: 2px;
+.button-cta {
+    display: flex;
+    color: #000;
+    font-family: "Merriweather", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    padding: 1vw;
 }
 
-.white {
-    background-color: #fff;
-    width: 100%;
-    border-radius: 5px;
+/* fin section-1 */
+
+/* section 2 */
+.section-2 {
+    background-color: #F06292;
+    display: flex;
+    padding: 5%
 }
 
-.black {
-    background-color: #000;
-    height: 120px;
-    width: 30%;
-    position: relative;
-    margin-left: -15px;
-    margin-right: -20px;
-    z-index: 1;
+.left-section-2 {
+    margin-top: 14%;
+    margin-right: 17%;
+    width: 30vw;
+}
+
+.cards-section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pair-cards-section-2 {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.card-section-2 {
+    width: 20vw; 
+    margin: 5%;
+}
+
+.instrument {
+    width: 20vw;
+    height: auto;
+}
+
+.card-title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    }
+
+.card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+/* fin section-2 */
+
+/* footer */
+footer {
+    background-color: #EB4138;
+    text-align: center;
+    height: 25vh;
+}
+
+.social-icons {
+    margin-top: 2vh;
+}
+
+.hr {
+    width: 80%;
+    margin: 2% auto;
+    color: #FFF;
+}
+
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    color: #FFF;
 }
 
 
-/* ... (Código anterior) ... */
+/* media queries */
 
-#container {
+@media only screen and (max-width: 768px) {
+
+/* section 1 */
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.logo-section-1 {
+    display: flex;
+    width: 29vw;
+    height: auto;
+}
+
+.left-section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-musicians {
+    width: 90vw;
+}
+
+.img-musician {
+    width: 29vw;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.intro {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    text-align: center;
+}
+
+.highlight-text {
+    color: #FAC348;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+
+.button-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 10vh;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 2px 0px #EB4138;
+    margin-bottom: 10%;
+}
+
+.button-cta {
+    display: flex;
+    color: #000;
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    padding: 1vw;
+}
+
+/* fin section-1 */
+
+/* section 2 */
+
+.section-2 {
+    background-color: #F06292;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 14%;
+    margin-left: 10%;
+    width: 45vw;
+}
+
+.singer-img {
+    width: 45vw;
+}
+
+/* cards section-2 */
+.cards-section-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: -20%;
-    background-color: black;
-    color: #a2a2a2;
+.pair-cards-section-2 {
+    display: flex; 
+    flex-direction: column;
+
 }
 
-#piano {
-    display: flex;
-    justify-content: center;
-    align-items: normal;
-    flex-wrap: nowrap;
-    width: 60%;
-    /* Ajusta el ancho del piano igual al del wrapper */
+.card-section-2 {
+    width: 40vw; 
 }
 
-
-/* ... (Resto del código) ... */
-
- /*Empiezo descripciones*/
-.vol {
-    font-size: 30px;
+.instrument {
+    width: 40vw;
+    height: auto;
 }
 
-.tran{
-    font-size: 30px;
+.card-title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    }
+
+.card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
 }
 
-.not{
-    font-size: 30px;
-    position: relative;
-    right:40px;
+/* fin section-2 */
+
+footer {
+    background-color: #EB4138;
 }
 
-.titulo2{
-  font-size: 200%;
-  color: #F06292;
-  font-family: 'Montserrat', sans-serif;
+.copyright {
+    font-size: 0.6rem
 }
 
-
-.description{
-  font-size: 24px;
-  margin: 7px;
 }
 
-
-
-.description2{
-  font-size: 24px;
-}
-
-.transpose{
-  font-size: 30px;
-  color: #F06292;
-}
-
-.des3{
-  font-size: 24px;
-}
-
-.titulo3{
-  font-size: 200%;
-  color: #F06292;
-}
-
-.titulo4 {
-  font-size: 200%;
-  color: #F06292;
-}
-
-.tecladoins{
-  width: 50%;
-}
