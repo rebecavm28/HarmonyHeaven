@@ -28,6 +28,9 @@
 }
 
 .img-logo {
+    background-color: #EB4138;
+    color: #050000;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
