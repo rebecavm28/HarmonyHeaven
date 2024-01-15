@@ -1,128 +1,328 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing:border-box;
-} 
 
-/* NAV BAR */
-header {
-    background-color: #EB4138;
-    color: #050000;
-    padding: 10px;
+
+
+/* section 1 */
+.section-1 {
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+.logo-section-1 {
+    display: flex;
+    width: 16vw;
+    height: 26vh;
+}
+
+.left-section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-musicians {
+    width: 50vw;
+}
+
+.img-musician {
+    width: 16vw;
+}
+
+.img-logo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border:none;
-  }
-  
-  .logo img {
-    height: auto; /* Ajusta la altura del logo según tus necesidades */
-    max-width: 100px ;
-    margin-left: 120px;
-  }
-  
-  nav ul {
-    list-style: none;
+}
+
+.right-section-1 {
     display: flex;
-    margin-right: 80px;
-    font-family:'Merriweather', serif;
-  }
-  
-  nav ul li {
-    margin-right: 50px;
- 
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #050505;
-  
-  }
-  
-  /* Estilos para adaptar la barra de navegación en dispositivos pequeños (responsive) */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav {
-      margin-top: 10px;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-/* FIN NAV BAR */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+}
 
-/* CSS ABOUT US PAGE*/
-
-  .introductory-text {
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 140px;
-    margin-right: 140px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.intro {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
     text-align: center;
-  }
+}
 
-  .palabra-destacada{
-    font-weight: bold ;
-    color:#FAC348;
-    display:flex;
-  }
-  .sara{
+.highlight-text {
+    color: #FAC348;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+
+.button-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 2px 0px #EB4138;
+}
+
+.button-cta {
+    display: flex;
+    color: #000;
+    font-family: "Merriweather", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    padding: 1vw;
+}
+
+/* fin section-1 */
+
+/* section 2 */
+.section-2 {
     background-color: #F06292;
     display: flex;
-    align-items: ;
-    z-index: -1;
-  }
+    padding: 5%
+}
 
-  .background-rectangle {
-  width:600px;
-  height:300px;
-  background-color: #FAC348;
-  z-index: -1; /* Colocar la forma detrás de la imagen */
-  }
-  .teachers-img {
-    max-width:250px;
-    height:auto;
-    position: relative; /* Asegurarse de que la imagen esté en su posición original */
-    z-index: 1; /* Colocar la imagen sobre el fondo */
-  }
-  .teachers-names {
-    font-family: 'Montserrat', sans-serif;
-    color: #EB4138;
-    display: flex;
-    align-content: center;
-  }
-  .teachers-instrument {
-    font-family: 'Merriweather', serif;
-    color:#F06292;
-    display: flex;
-    align-content: center;
-  }
+.left-section-2 {
+    margin-top: 14%;
+    margin-right: 17%;
+    width: 30vw;
+}
 
-  .teacher-description{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: px;
-    margin-right: px;
-    padding-top: px;
-    padding-bottom: px;
+.cards-section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pair-cards-section-2 {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.card-section-2 {
+    width: 20vw; 
+    margin: 5%;
+}
+
+.instrument {
+    width: 20vw;
+    height: auto;
+}
+
+.card-title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    }
+
+.card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+/* fin section-2 */
+
+/* footer */
+footer {
+    background-color: #EB4138;
     text-align: center;
-  }
+    height: 25vh;
+}
+
+.social-icons {
+    margin-top: 2vh;
+}
+
+.hr {
+    width: 80%;
+    margin: 2% auto;
+    color: #FFF;
+}
+
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    color: #FFF;
+}
 
 
-/* color rosa#F06292    color amarillo #FAC348*/
-/*font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-*/
+/* media queries */
 
-/* END CSS ABOUT US PAGE*/
+@media only screen and (max-width: 768px) {
+
+/* section 1 */
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.logo-section-1 {
+    display: flex;
+    width: 29vw;
+    height: auto;
+}
+
+.left-section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-musicians {
+    width: 90vw;
+}
+
+.img-musician {
+    width: 29vw;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.intro {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    text-align: center;
+}
+
+.highlight-text {
+    color: #FAC348;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+
+.button-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 10vh;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 2px 0px #EB4138;
+    margin-bottom: 10%;
+}
+
+.button-cta {
+    display: flex;
+    color: #000;
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    padding: 1vw;
+}
+
+/* fin section-1 */
+
+/* section 2 */
+
+.section-2 {
+    background-color: #F06292;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 14%;
+    margin-left: 10%;
+    width: 45vw;
+}
+
+.singer-img {
+    width: 45vw;
+}
+
+/* cards section-2 */
+.cards-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pair-cards-section-2 {
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.card-section-2 {
+    width: 40vw; 
+}
+
+.instrument {
+    width: 40vw;
+    height: auto;
+}
+
+.card-title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    }
+
+.card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+/* fin section-2 */
+
+footer {
+    background-color: #EB4138;
+}
+
+.copyright {
+    font-size: 0.6rem
+}
+
+}
+
