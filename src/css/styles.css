@@ -63,6 +63,103 @@ header {
     }
   }
 /* FIN NAV BAR */
+/*CSS ABOUT US-----------------------------------------------------*/
+
+.about-us_content{
+  margin-top: 10%;
+}
+
+.about-us_content h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  margin: 3em;
+}
+
+.palabra-destacada{
+  font-weight: bold ;
+  color:#FAC348;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 140px;
+}
+
+.team .team_member{
+  font-family: 'Montserrat', sans-serif;
+  
+  background:#FAC348;
+  margin: 15px;
+  margin-bottom: 100px;
+  width: 600px; /*Esto estaba en 300*/
+  padding: 20px;
+  line-height: 20px;/*Espaciado entre lineas*/
+  color: white;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color:#EB4138;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-left: 6em;
+}
+
+.team .team_member p.role{
+  color: #F06292;
+  font-family: 'Merriweather', serif;
+  margin: 12px 0;
+  font-size: 15px;
+  margin-left: 10em;
+}
+
+.team .team_member p.description{
+  margin-left: 15em;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -121px;
+  left: 20%; /*Con 50%se queda la imagen en el medio*/
+  transform: translateX(-50%);
+  width: 250px;
+  border-radius: 50%;/**No necesito esto*/
+  /*background: #fff; Fondo de la imagen*/
+}
+
+.team .team_member .team_img img{
+  width: 300px; /*width y height*/
+  height: 400px;
+  padding: 5px;
+}
+
+.team .team_member .team_img-left{
+  position: absolute;
+  top: -61px;
+  left: 85%; /*Con 50%se queda la imagen en el medio*/
+  transform: translateX(-50%);
+  width: 150px;
+  /*background: #fff; Fondo de la imagen*/
+}
+
+.team .team_member .team_img-left img{
+  width: 400px; /*width y height*/
+  height: 300px;
+  padding: 5px;
+}
+
+.left-text{
+  margin-right: 8em;
+}
+
+/*FIN CSS ABOUT US*/
  
 /*INSTRUMENT*/
 body {
