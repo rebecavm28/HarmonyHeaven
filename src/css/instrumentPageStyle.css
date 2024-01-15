@@ -1,3 +1,60 @@
+/*inicio del nav*/
+header {
+  background-color: #EB4138;
+  color: #050000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+}
+
+.logo img {
+  height: auto; /* Ajusta la altura del logo según tus necesidades */
+  max-width: 100px ;
+  margin-left: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 80px;
+  font-family:'Merriweather', serif;
+}
+
+nav ul li {
+  margin-right: 50px;
+
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #050505;
+
+}
+
+/* Estilos para adaptar la barra de navegación en dispositivos pequeños (responsive) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: px;
+  }
+}
+/* FIN NAV BAR */
 /*INSTRUMENT*/
 body {
     text-align: center;
@@ -25,7 +82,7 @@ h1{
 }
 
 .key {
-    height: 200px;
+    height: 150px;
     width: 100%;
     border: 1px solid #000;
     cursor: pointer;
@@ -40,7 +97,7 @@ h1{
 
 .black {
     background-color: #000;
-    height: 120px;
+    height: 90px;
     width: 30%;
     position: relative;
     margin-left: -15px;
