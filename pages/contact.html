@@ -45,40 +45,57 @@
     <section class="section-contact">
         <!--SECTION-LEFT/CONTACT INFO-->
         <article class="section-left-contact">
-            <h1 class="contact-title">CONTACT INFO</h1>
-            <p class="contact-text">Harmony Heaven</p>
+            <div class="contact-info">
+                <h2 class="contact-title">CONTACT INFO</h2>
+                <p class="contact-text">Harmony Heaven</p>
 
-            <h1 class="contact-title">CORREO ELECTRÓNICO</h1>
-            <p class="contact-text">info@harmonyheaven.com</p>
+                <h2 class="contact-title">CORREO ELECTRÓNICO</h2>
+                <p class="contact-text">info@harmonyheaven.com</p>
 
-            <h1 class="contact-title">TELÉFONO</h1>
-            <p class="contact-text">910 45 22 30</p>
+                <h2 class="contact-title">TELÉFONO</h2>
+                <p class="contact-text">910 45 22 30</p>
 
-            <h1 class="contact-title">UBICACIÓN</h1> 
-            <p class="contact-text">Calle de la Música, 6,<br> Madrid, 28037</p>
-
+                <h2 class="contact-title">UBICACIÓN</h2> 
+                <p class="contact-text">Calle de la Música, 6,<br> Madrid, 28037</p>
+            </div>
             <img src="/public/assets/imagenes/singer-illustration.svg" alt="girl singing illustration" class="img-singer">
         </article>
         <!--SECTION-RIGHT/CONTACT FORM-->
         <article class="section-right-form">
             <h1 class="h1-contact">Contáctanos</h1>
-            <form action="/procesar_formulario" method="post" enctype="multipart/form-data" class="contact-form">
-                <label for="nombre"></label>
-                <input type="text" class="name-form" id="nombre" name="nombre" required placeholder="Nombre(*)"><br>
+            <form id="formulario" action="procesar.php" method="">
 
-                <label for="apellidos"></label>
-                <input type="text" class="surname-form" id="apellidos" name="apellidos" required placeholder="Apellidos(*)"><br>
-
-                <label for="email"></label>
-                <input type="email" id="email" name="email" class="email-form" required placeholder="Correo Electrónico(*)"><br>
-
-                <label for="telefono"></label>
-                <input type="tel" id="telefono" class="phone-form" name="telefono" placeholder="Teléfono(*)"><br>
-
-                <label for="mensaje"></label>
-                <textarea id="mensaje" name="mensaje" class="message-form" rows="4" required placeholder="Mensaje"></textarea><br>
-
-                <input type="submit" class="enviar" value="Enviar">
+                <div class="form-control">
+                    <label for="nombre"></label>
+                    <input id="nombre" type="text" class="name-form" placeholder="Nombre">
+                    <p></p>                
+                </div>
+    
+                <div class="form-control">
+                    <label for="apellidos"></label>
+                    <input id="apellidos" type="text" class="surname-form" placeholder="Apellidos">
+                    <p></p>                
+                </div>
+    
+                <div class="form-control">
+                    <label for="email"></label>
+                    <input id="email" type="email" class="email-form" placeholder="Correo Electrónico">
+                    <p></p>                
+                </div>
+    
+                <div class="form-control">
+                    <label for="telefono"></label>
+                    <input id="telefono" type="tel" class="phone-form" placeholder="Teléfono">
+                    <p></p>                
+                </div>
+    
+                <div class="form-control">
+                    <label for="mensaje"></label>
+                    <textarea id="mensaje" name="mensaje" class="message-form" rows="4" placeholder="Mensaje"></textarea>
+                    <p></p>                
+                </div>
+    
+                <button type="submit" class="enviar" value="Enviar">Enviar</button>
             </form>
         </article>
     </section>
@@ -93,5 +110,6 @@
             <p class="copyright">@Copyright 2024 Harmony Heaven · Todos los derechos reservados</p>
     </footer>
     <script src="/src/js/script.js"></script>
+    <script src="/src/js/validation.js"></script>
 </body>
 </html>
