@@ -9,7 +9,7 @@
     z-index: 1;
   }
   
-  .logo img{
+  .logo-nav {
     width:160px;
     height: auto;
     padding-left: 4em; /*Para dar margen izquierdo al logo*/
@@ -21,7 +21,7 @@
         display: none; /* Oculta el logo en pantallas más grandes */
     }
   }
-  img {
+  .logo-burger{
     max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
   }
   
@@ -109,7 +109,6 @@
 }
 
 .img-logo {
-    background-color: #EB4138;
     color: #050000;
     padding: 10px;
     display: flex;
