@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/harmonyheaven/src/css/instrumentPageStyle.css">
+    <link rel="stylesheet" href="/harmonyheaven/src/css/styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -31,52 +31,45 @@
                   <div class="column volumen-slider">
                       <span class="vol">volumen</span> <input type="range">
                   </div>
-                <il class="nuestramarca">HarmonyHeaven</il>
+                  <div class="column-transpose">
+                      <span class="tran">transpose</span> <input type="checkbox">
+                  </div>
                   <div class="column keys-checkbox">
                       <span class="not">notas</span> <input type="checkbox">
                   </div>
               </div>
-                
-              <ul id="piano">
-                  <div class="key white" data-note="C"><button id="miboton">C</button><audio id="miaudio" src="../public/assets/audio/nota LA.mp3"></audio></div>
+      
+              <div id="piano">
+                  <div class="key white" data-note="C"></div>
                   <div class="key black" data-note="C#"></div>
                   <div class="key white" data-note="D"></div>
                   <div class="key black" data-note="D#"></div>
                   <div class="key white" data-note="E"></div>
                   <div class="key white" data-note="F"></div>
-                  
-                  
-                  
-                 
+                  <div class="key black" data-note="F#"></div>
+                  <div class="key white" data-note="G"></div>
+                  <div class="key black" data-note="G#"></div>
+                  <div class="key white" data-note="A"></div>
                   <div class="key black" data-note="A#"></div>
-                  
                   <div class="key white" data-note="B"></div>
-                  <div class="key black" data-note="C#3"></div>
-                  <div class="key white" data-note="D3"></div>
-                  <div class="key black" data-note="D#3"></div>
-                  <div class="key white" data-note="E3"></div>
-                  <div class="key white" data-note="G3"></div>
-                  <div class="key black" data-note="G#3"></div>
-                  <div class="key white" data-note="A3"></div>
-                  <div class="key black" data-note="A#3"></div>
-                  <div class="key white" data-note="B3"></div>
-                  <div class="key white" data-note="C3"></div>
-                  <div class="key black" data-note="C#3"></div>
-                  <div class="key white" data-note="D3"></div>
-                  <div class="key black" data-note="D#3"></div>
-                  <div class="key white" data-note="E3"></div>
-                  <div class="key black" data-note="F#3"></div>
-                  <div class="key white" data-note="G3"></div>
-                 
-                  
-                
-                  
-                  
-                
-                  
+                  <div class="key white" data-note="C2"></div>
+                  <div class="key black" data-note="C#2"></div>
+                  <div class="key white" data-note="D2"></div>
+                  <div class="key black" data-note="D#2"></div>
+                  <div class="key white" data-note="E2"></div>
+                  <div class="key black" data-note="F#2"></div>
+                  <div class="key white" data-note="G2"></div>
+                  <div class="key black" data-note="G#2"></div>
+                  <div class="key white" data-note="A2"></div>
+                  <div class="key black" data-note="A#2"></div>
+                  <div class="key white" data-note="B2"></div>
+      
                   <!-- Agrega más teclas según sea necesario -->
-              <audio id="audioC" src="../public/assets/audio/nota LA.mp3"></audio>
               </div>
+              <audio id="audio" preload="auto">
+                <source id="C" src="../public/assets/audio/nota LA.mp3" type="audio/mp3">
+                <source id="C#" src="ruta/al/tu/C#.mp3" type="audio/mp3">
+         
          
             </div>
             <img class="tecladoins" src="/harmonyheaven/public/assets/imagenes/piano_pc_instructions 4.png" alt="teclado">
@@ -103,11 +96,6 @@
            ¡Disfruta de tu viaje musical en Harmony Heaven!
            Toca, aprende y sumérgete en la magia de la música con nuestro Piano Virtual interactivo.</p>
       
-           <footer>
-            <img src="../public/assets/iconos/social icons.svg" alt="iconos de las redes sociales de nuestra empresa HarmonyHeaven" class="social-icons">
-            <hr class="hr">
-            <p class="copyright">@Copyright 2024 Harmony Heaven · Todos los derechos reservados</p>
-        </footer>
-           <script src="../src/js/script.js"></script>
+           <script src="../src/js/mains.js"></script>
 </body>
 </html>
