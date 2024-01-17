@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/harmonyheaven/src/css/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/instrument.css">
+  <title>Document</title>
 </head>
 <body>
+  <nav class="main-nav">
+    <div id="toggle-menu" class="toggle-menu">
+        <img src="/public/assets/imagenes/hamburger-icon.png" alt="">
+    </div>
+    <div id="logo" class="logo">
+        <img src="/public/assets/imagenes/logo harmony heaven 1.svg" alt="Logo">
+    </div>
+  <ul id="main-menu"   class="main-menu">
+    <li class="main-menu_item">
+        <a href="#" class="main-menu_link">Home</a>
+    </li>
+    <li class="main-menu_item">
+        <a href="#" class="main-menu_link">Instrumentos</a>
+    </li>
+    <li class="main-menu_item">
+        <a href="#" class="main-menu_link">Sobre Nosotros</a>
+    </li>
+    <li class="main-menu_item">
+        <a href="#" class="main-menu_link">Contacto</a>
+    </li>
+  </ul>
+</nav>
+
+ <!-- PRIMER PARRAFO-->
+ <div class="instrument-content">
+  <img class="img-notamusical" src="/public/assets/iconos/music-icon.svg" alt="nota musical">
+  <h1 class="instrument-introduction">Bienvenido a la sección interactiva de Harmony Heaven, 
+    donde la <span class="colorido">música</span> es mucho más que notas en una partitura:
+    es una experiencia que puedes <span class="colorido">tocar</span>, <span class="colorido">sentir</span> y <span class="colorido">vivir</span>.<br>
+        ¡Descubre tu potencial musical hoy mismo!</h1>
+ </div>
+  <!--HTML PIANO------------------------------------------------------------------>
+<div class="body-wrapper">
+  <div class="wrapper">
     <header>
-        <div class="logo">
-          <img src="/harmonyheaven/public/assets/imagenes/logonotacreada.png" alt="Logo">
-        </div>
-        <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/instrument.html">Instrumentos</a></li>
-            <li><a href="/pages/aboutus.html">Sobre nosotros</a></li>
-            <li><a href="/pages/contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-      <img src="/harmonyheaven/public/assets/imagenes/music-icon.png" alt="nota musical">
-      <h1>Bienvenido a la sección interactiva de Harmony Heaven, 
-        donde la <span class="colorido">música</span> es mucho más que notas en una partitura
-        es una experiencia que puedes <span class="colorido"> tocar sentir vivir</span> <h1>
-            <p>¡Descubre tu potencial musical hoy mismo!</p>
-   
-            <div id="container">
-              <div class="wrapper">
-                  <div class="column volumen-slider">
-                      <span class="vol">volumen</span> <input type="range">
-                  </div>
-                  <div class="column-transpose">
-                      <span class="tran">transpose</span> <input type="checkbox">
-                  </div>
-                  <div class="column keys-checkbox">
-                      <span class="not">notas</span> <input type="checkbox">
-                  </div>
-              </div>
-      
-              <div id="piano">
-                  <div class="key white" data-note="C"></div>
-                  <div class="key black" data-note="C#"></div>
-                  <div class="key white" data-note="D"></div>
-                  <div class="key black" data-note="D#"></div>
-                  <div class="key white" data-note="E"></div>
-                  <div class="key white" data-note="F"></div>
-                  <div class="key black" data-note="F#"></div>
-                  <div class="key white" data-note="G"></div>
-                  <div class="key black" data-note="G#"></div>
-                  <div class="key white" data-note="A"></div>
-                  <div class="key black" data-note="A#"></div>
-                  <div class="key white" data-note="B"></div>
-                  <div class="key white" data-note="C2"></div>
-                  <div class="key black" data-note="C#2"></div>
-                  <div class="key white" data-note="D2"></div>
-                  <div class="key black" data-note="D#2"></div>
-                  <div class="key white" data-note="E2"></div>
-                  <div class="key black" data-note="F#2"></div>
-                  <div class="key white" data-note="G2"></div>
-                  <div class="key black" data-note="G#2"></div>
-                  <div class="key white" data-note="A2"></div>
-                  <div class="key black" data-note="A#2"></div>
-                  <div class="key white" data-note="B2"></div>
-      
-                  <!-- Agrega más teclas según sea necesario -->
-              </div>
-              <audio id="audio" preload="auto">
-                <source id="C" src="../public/assets/audio/nota LA.mp3" type="audio/mp3">
-                <source id="C#" src="ruta/al/tu/C#.mp3" type="audio/mp3">
-         
-         
-            </div>
-            <img class="tecladoins" src="/harmonyheaven/public/assets/imagenes/piano_pc_instructions 4.png" alt="teclado">
-          <h2 class="titulo2">Empieza a usar nuestro Piano Virtual interactivo, donde las melodías cobran vida con el toque de tus dedos </h2>
-          <p class= "description">Usa el teclado de tu ordenador o haz clic en las teclas del piano para desatar tu creatividad musical.
-             La fila superior de letras de tu teclado representa las teclas blancas,
-             mientras que la fila de números se corresponde con las teclas negras.
-             ¡Siéntete libre de crear acordes, melodías y armonías tocando varias notas a la vez!</p>
+      <h2>Piano Interactivo</h2>
+      <div class="column volume-slider">
+        <span>Volumen</span> <input type="range" min="0" max="1" value="0.5" step="any"> <!--Controles del audio-->
+      </div>
+      <div class="column keys-checkbox">
+        <span>Mostrar Notas</span> <input type="checkbox" checked>
+      </div>
+    </header>
+    <ul class="piano-keys">
+      <li class="key white" data-key="q"><span>c</span></li>
+      <li class="key black" data-key="1"><span>c#</span></li>
+      <li class="key white" data-key="w"><span>d</span></li>
+      <li class="key black" data-key="2"><span>d#</span></li>
+      <li class="key white" data-key="e"><span>e</span></li> <!--la d no esta en audios-->
+      <!--<li class="key black" data-key="f"><span>f</span></li>-->
+      <li class="key white" data-key="r"><span>f</span></li>
+      <li class="key black" data-key="4"><span>f#</span></li>
+      <li class="key white" data-key="t"><span>g</span></li>
+      <li class="key black" data-key="5"><span>g#</span></li>
+      <li class="key white" data-key="y"><span>a</span></li>
+      <li class="key black" data-key="6"><span>a#</span></li>
+      <li class="key white" data-key="u"><span>b</span></li>
+      <!--<li class="key black" data-key="o"><span>o</span></li>-->
+      <li class="key white" data-key="i"><span>c</span></li>
+      <li class="key black" data-key="8"><span>c#</span></li>
+      <li class="key white" data-key="o"><span>d</span></li><!--a partir de aqui ya no coinciden los audios y no suenan-->
+      <li class="key black" data-key="9"><span>d#</span></li>
+      <li class="key white" data-key="p"><span>e</span></li>
+    </ul>
+  </div>
+</div>
 
-          <h3 class="titulo3">Oculta las notas o marca tus logros</h3>
-          <p class="description2">Personaliza tu experiencia
-             haciendo clic en "notas" encima del piano para ocultar 
-             los nombres de las notas y sumergirte en la experiencia musical.
-             Si quieres hacer un seguimiento de tu progreso,
-             haz clic en "Marcar" para señalar las notas cuando las toques.
-            ¡Cada sesión en el piano virtual es una oportunidad para aprender y mejorar!
-          </p>
+<!--TEXTO E IMAGENES DE INSTRUCCIONES-->
 
-          <h4 class="titulo4">Transpose y explora nuevas tonalidades</h4>
-          <p class="des3">¿Quieres experimentar con diferentes tonalidades? 
-            Utiliza nuestro transpositor para cambiar de tonalidad fácilmente. 
-            Esta herramienta te permite explorar y tocar en distintas escalas,
-            brindándote una mayor flexibilidad y facilitando tu experiencia musical.
-           ¡Disfruta de tu viaje musical en Harmony Heaven!
-           Toca, aprende y sumérgete en la magia de la música con nuestro Piano Virtual interactivo.</p>
-      
-           <script src="../src/js/mains.js"></script>
+<div class="instrument-instructions">
+<img class="img-teclado" src="/public/assets/imagenes/piano_pc_instructions.svg" alt="teclado">
+<h2 class="encabezados-rosa">Empieza a usar nuestro Piano Virtual interactivo, donde las melodías cobran vida con el toque de tus dedos </h2>
+<p class= "instrument-description">Usa el teclado de tu ordenador o haz clic en las teclas del piano para desatar tu creatividad musical.
+   La fila superior de letras de tu teclado representa las teclas blancas,
+   mientras que la fila de números se corresponde con las teclas negras.
+   ¡Siéntete libre de crear acordes, melodías y armonías tocando varias notas a la vez!</p>
+
+<h3 class="encabezados-rosa">Oculta las notas o marca tus logros</h3>
+<p class="instrument-description">Personaliza tu experiencia
+   haciendo clic en "notas" encima del piano para ocultar 
+   los nombres de las notas y sumergirte en la experiencia musical.
+   Si quieres hacer un seguimiento de tu progreso,
+   haz clic en "Marcar" para señalar las notas cuando las toques.
+  ¡Cada sesión en el piano virtual es una oportunidad para aprender y mejorar!
+</p>
+
+<h4 class="encabezados-rosa">Transpose y explora nuevas tonalidades</h4>
+<p class="instrument-description">¿Quieres experimentar con diferentes tonalidades? 
+  Utiliza nuestro transpositor para cambiar de tonalidad fácilmente. 
+  Esta herramienta te permite explorar y tocar en distintas escalas,
+  brindándote una mayor flexibilidad y facilitando tu experiencia musical.
+ ¡Disfruta de tu viaje musical en Harmony Heaven!
+ Toca, aprende y sumérgete en la magia de la música con nuestro Piano Virtual interactivo.</p>
+</div>
+
+<footer>
+  <img src="/public/assets/iconos/social icons.svg" alt="iconos de las redes sociales de nuestra empresa HarmonyHeaven" class="social-icons">
+  <hr class="hr">
+  <p class="copyright">@Copyright 2024 Harmony Heaven · Todos los derechos reservados</p>
+</footer>
+
+  <script src="/src/js/instrument.js"></script>
 </body>
 </html>
