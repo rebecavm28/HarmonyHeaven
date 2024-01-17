@@ -1,3 +1,87 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+  } /*si ponermos el * en vez de body, el logo se modifica*/
+
+  
+  /*AQUI EMPIEZA LA NAV BAR*/
+  .logo {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .logo-nav {
+    width:160px;
+    height: auto;
+    padding-left: 4em; /*Para dar margen izquierdo al logo*/
+    margin-top: 8%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+        display: none; /* Oculta el logo en pantallas más grandes */
+    }
+  }
+  .logo-burger{
+    max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
+  }
+  
+  .toggle-menu{
+    position: absolute;/*Para que pierda su contenido en el flujo con esto ya puedo usar z index*/
+    top:0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    /*filter: invert(1);  esto es solo si quisiera cambiar de color a blanco el menu hamurguesa*/
+    width: 40px;
+    z-index: 1;
+  }
+  
+  @media screen and (min-width:768px) {
+    .toggle-menu{
+        display: none;
+    }
+  }
+  
+  .main-menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#EB4138;
+    transition: transform 0.3s; /*Es la mejor forma de animar el ccs, nunca con padding ni margin!*/
+    transform: translateY(-100%);
+  }
+  
+  .main-menu--show{
+    transform: translateY(0); /*con esto consigo que el menu se quede en el centro*/
+  } /*Esta es la clase que vamos a cambiar desde javascript para que se muestre el menu clickando en el menu hamburguesa*/
+  
+  @media screen and (min-width:768px) {
+    .main-menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0); /*Esto lo pongo para que semustre mimenu aunque en el modo menu hamburguesa para l movil lo haya ocultado*/
+        height: 100px; /*la altura de mi navbar*/
+        padding-right: 4em;/* para dar margen derecho a Contacto*/
+    }
+  }
+  
+  .main-menu_item{
+    padding: 1em;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .main-menu_link{
+    color:black;
+    text-decoration: none;
+  }
+  
+  /*AQUI TERMINA LA NAV BAR*/
 /*inicio del nav*/
 header {
     background-color: #EB4138;
@@ -84,7 +168,6 @@ header {
 }
 
 .img-logo {
-    background-color: #EB4138;
     color: #050000;
     padding: 10px;
     display: flex;
