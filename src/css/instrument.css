@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*inicio navbar---------*/
+
+  /*AQUI EMPIEZA LA NAV BAR*/
+  .logo {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .logo img{
+    width:160px;
+    height: auto;
+    padding-left: 4em; /*Para dar margen izquierdo al logo*/
+    margin-top: 8%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+        display: none; /* Oculta el logo en pantallas más grandes */
+    }
+  }
+  img {
+    max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
+  }
+  
+  .toggle-menu{
+    position: absolute;/*Para que pierda su contenido en el flujo con esto ya puedo usar z index*/
+    top:0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    /*filter: invert(1);  esto es solo si quisiera cambiar de color a blanco el menu hamurguesa*/
+    width: 40px;
+    z-index: 1;
+  }
+  
+  @media screen and (min-width:768px) {
+    .toggle-menu{
+        display: none;
+    }
+  }
+  
+  .main-menu{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#EB4138;
+    transition: transform 0.3s; /*Es la mejor forma de animar el ccs, nunca con padding ni margin!*/
+    transform: translateY(-100%);
+  }
+  
+  .main-menu--show{
+    transform: translateY(0); /*con esto consigo que el menu se quede en el centro*/
+  } /*Esta es la clase que vamos a cambiar desde javascript para que se muestre el menu clickando en el menu hamburguesa*/
+  
+  @media screen and (min-width:768px) {
+    .main-menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0); /*Esto lo pongo para que semustre mimenu aunque en el modo menu hamburguesa para l movil lo haya ocultado*/
+        height: 100px; /*la altura de mi navbar*/
+        padding-right: 4em;/* para dar margen derecho a Contacto*/
+    }
+  }
+  
+  .main-menu_item{
+    padding: 1em;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .main-menu_link{
+    color:black;
+    text-decoration: none;
+  }
+  
+  /*AQUI TERMINA LA NAV BAR*/
+
+
+/*CSS DE CONTENIDO DE TEXTO*/
+.instrument-content{
+  text-align: center;
+}
+
+.img-notamusical{
+margin-top: 5%;
+}
+
+.instrument-introduction{
+  font-size: 50px;
+  margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em/*left*/
+}
+
+.colorido{
+  color:#FAC348 ;
+}
+
+.img-teclado {
+  width: 100vh;
+  margin-bottom: 3em;
+}
+
+.instrument-instructions{
+  text-align: center;
+  padding-bottom:4em;
+}
+.encabezados-rosa{
+  font-size: 200%;
+  color: #F06292;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em/*left*/
+}
+
+.instrument-description{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em/*left*/;
+}
+
+/*piano csss*/
+.body-wrapper{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 80vh; /*ayuda a ajustar el piano en l body*/
+padding: 0 10px;
+background-color: #fff;
+}
+
+.wrapper{
+    /*width: 780px;*/
+    border-radius: 20px;
+    padding: 35px 40px;
+    background: black;
+}
+
+.wrapper header{
+    color:#b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h2{
+    font-size: 1.4rem;
+    
+}
+
+header .column{
+    display: flex;
+    align-items: center;
+}
+
+header .column span{
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.19rem;
+}
+
+.volume-slider input { 
+    accent-color: ·#fff;
+}
+
+.keys-checkbox input {
+    width: 60px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    border-radius: 30px;
+    background: #4b4b4b;
+}
+
+.keys-checkbox input::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 5px;
+    border-radius: inherit;
+    position: absolute;
+    background: #8c8c8c;
+    transform: translateY(-50%);
+    transition: all 0.3s ease; /*transicion del boton*/
+}
+
+.keys-checkbox input:checked::before{
+    left: 35px;
+    background: #fff;
+}
+
+.piano-keys{
+    display: flex;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.piano-keys .key{
+    cursor: pointer;
+    user-select: none;/*Para evitar qe el usuario selecciones las letras*/
+    list-style: none;
+    color: #a2a2a2;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.piano-keys .black{
+    width: 44px;
+    height: 140px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+}
+
+.piano-keys .black.active{/*animando las teclas, esto lo llamamos en JS*/
+    box-shadow: inset -5px 5px 20px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom, #000, #434343);
+}
+
+.piano-keys .white{
+    width: 70px;
+    height: 230px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+.piano-keys .white.active{/*animando las teclas*/
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+
+.piano-keys span{/*las letras del piano*/
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.13rem;
+    text-align: center;
+}
+
+.piano-keys .key.hide span{
+    display: none;
+}
+
+/*MEDIAS QUERIES*/
+
+@media screen and (max-width: 815px){
+    .wrapper{
+        padding:25px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header :where(h2, .column){
+        margin-bottom: 13px
+    }
+
+    .volume-slider input{
+        max-width: 100px;
+    }
+
+    .piano-keys{
+        margin-top: 20px;
+    }
+    
+    .piano-keys key:where(:nth-child(9), nth-child(10)) {
+        display: none;
+    }
+
+    .piano-keys .black {
+        height: 100px;
+        width: 40px;
+        margin: 0 -20px 0 -20px;
+    }
+
+    .piano-keys .white {
+        height: 180px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 615px){
+    .piano-keys .key:nth-child(13),
+    .piano-keys .key:nth-child(14),
+    .piano-keys .key:nth-child(15),
+    .piano-keys .key:nth-child(16),
+    .piano-keys .key:nth-child(17) {
+        display: none;
+    }
+
+    .piano-keys .white {
+        width: 50px;
+    }
+}
+
+/* footer */
+footer {
+  background-color: #EB4138;
+  text-align: center;
+  height: 25vh;
+}
+
+.social-icons {
+  margin-top: 2vh;
+}
+
+.hr {
+  width: 80%;
+  margin: 2% auto;
+  color: #FFF;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  color: #FFF;
+}
+
