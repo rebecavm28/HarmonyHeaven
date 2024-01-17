@@ -98,7 +98,8 @@ margin-top: 5%;
 
 .instrument-introduction{
   font-size: 50px;
-  margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em/*left*/
+  margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em;/*left*/
+  font-family: 'Montserrat', sans-serif;
 }
 
 .colorido{
