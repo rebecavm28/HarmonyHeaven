@@ -3,15 +3,13 @@
     padding: 0;
     box-sizing:border-box;
   } /*si ponermos el * en vez de body, el logo se modifica*/
-
-  
   /*AQUI EMPIEZA LA NAV BAR*/
   .logo {
     position: absolute;
     z-index: 1;
   }
   
-  .logo-nav {
+  .logo img{
     width:160px;
     height: auto;
     padding-left: 4em; /*Para dar margen izquierdo al logo*/
@@ -23,7 +21,7 @@
         display: none; /* Oculta el logo en pantallas más grandes */
     }
   }
-  .logo-burger{
+  img {
     max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
   }
   
@@ -82,64 +80,10 @@
   }
   
   /*AQUI TERMINA LA NAV BAR*/
-/*inicio del nav*/
-header {
-    background-color: #EB4138;
-    color: #050000;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border:none;
-  }
-  
-  .logo img {
-    height: auto; /* Ajusta la altura del logo según tus necesidades */
-    max-width: 100px ;
-    margin-left: 120px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin-right: 80px;
-    font-family:'Merriweather', serif;
-  }
-  
-  nav ul li {
-    margin-right: 50px;
-  
-  
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #050505;
-  
-  }
-  
-  /* Estilos para adaptar la barra de navegación en dispositivos pequeños (responsive) */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav {
-      margin-top: 10px;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-      margin-bottom: px;
-    }
-  }
-  /* FIN NAV BAR */
 
+  a {
+    text-decoration: none;
+  }
 
 /* section 1 */
 .section-1 {
