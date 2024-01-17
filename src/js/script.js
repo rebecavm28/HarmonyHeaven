@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 /*script.js nav bar*/
 
-const toggleMenuElement = document.getElementById('toggle-menu');/el icono de la hamburguesa/ 
-const mainMenuElement= document.getElementById('main-menu');/el menu/ 
+const toggleMenuElement = document.getElementById('toggle-menu');/*el icono de la hamburguesa*/ 
+const mainMenuElement= document.getElementById('main-menu');/*el menu*/ 
 
 toggleMenuElement.addEventListener('click', ()=>{
     mainMenuElement.classList.toggle('main-menu--show')
