@@ -22,7 +22,6 @@ window.addEventListener('load', ()=> {
         const passConfirmaValor = passConfirma.value.trim();*/
      
         //validando campo usuario
-        //(!usuarioValor) ? console.log('CAMPO VACIO') : console.log(usuarioValor)
         if(!nombreValor){
             //console.log('CAMPO VACIO')
             validaFalla(nombre, 'Por favor, rellena este campo.')
