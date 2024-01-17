@@ -69,7 +69,10 @@ h1{
     margin-top: 100px;
     margin-left: 40px;
 }
-
+.nuestramarca{
+  font-size: 80%;
+  color: #FAC348;
+}
 
 .colorido{
     color:#FAC348 ;
@@ -83,10 +86,10 @@ h1{
 
 .key {
     height: 150px;
-    width: 100%;
+    width: 20%;
     border: 1px solid #000;
     cursor: pointer;
-    margin: 2px;
+    
 }
 
 .white {
@@ -98,20 +101,21 @@ h1{
 .black {
     background-color: #000;
     height: 90px;
-    width: 30%;
+    width: 50%;
     position: relative;
     margin-left: -15px;
     margin-right: -20px;
     z-index: 1;
 }
 
-
 /* ... (Código anterior) ... */
 
 #container {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #000;
 }
 
 .wrapper {
@@ -121,7 +125,6 @@ h1{
     width: 60%;
     margin-top: 10px;
     border-radius: 20px;
-    padding: -20%;
     background-color: black;
     color: #a2a2a2;
 }
@@ -150,7 +153,7 @@ h1{
 .not{
     font-size: 30px;
     position: relative;
-    right:40px;
+    right:2px;
 }
 
 .titulo2{
@@ -193,3 +196,30 @@ h1{
 .tecladoins{
   width: 50%;
 }
+
+/*FOOTER*/
+/* footer */
+footer {
+  background-color: #EB4138;
+  text-align: center;
+  height: 25vh;
+}
+
+.social-icons {
+  margin-top: 2vh;
+}
+
+.hr {
+  width: 80%;
+  margin: 2% auto;
+  color: #FFF;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  color: #FFF;
+}
+
+/* fin footer */
