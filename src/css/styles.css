@@ -104,8 +104,12 @@
     flex-direction: column;
 }
 
+.musicians {
+    display: flex;
+}
+
 .img-musicians {
-    width: 50vw;
+    width: 130vw;
 }
 
 .img-musician {
@@ -113,8 +117,6 @@
 }
 
 .img-logo {
-    color: #050000;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -154,6 +156,7 @@
     height: 10vh;
     flex-shrink: 0;
     box-shadow: 4px 4px 2px 0px #EB4138;
+    margin-top: 2%;
 }
 
 .button-cta {
