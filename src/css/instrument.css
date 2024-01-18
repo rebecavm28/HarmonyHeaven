@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -97,17 +95,29 @@ margin-top: 5%;
 }
 
 .instrument-introduction{
-  font-size: 50px;
   margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em;/*left*/
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  text-align: center;
 }
 
 .colorido{
-  color:#FAC348 ;
+  color:#FAC348;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.96px;
 }
 
 .img-teclado {
   width: 100vh;
+  margin-top: 3em;
   margin-bottom: 3em;
 }
 
@@ -119,12 +129,18 @@ margin-top: 5%;
   font-size: 200%;
   color: #F06292;
   font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em/*left*/
 }
 
 .instrument-description{
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.5rem ;
   margin: 0.5em/*top*/ 3em/*right*/ 0.5em/*bottom*/ 3em/*left*/;
 }
 
