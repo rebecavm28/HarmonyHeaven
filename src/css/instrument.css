@@ -295,7 +295,7 @@ header .column span{
         margin-top: 20px;
     }
     
-    .piano-keys key:where(:nth-child(9), nth-child(10)) {
+    .piano-keys key:where(nth-child(9)) key:where(nth-child(10)) {
         display: none;
     }
 
