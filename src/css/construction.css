@@ -17,10 +17,16 @@
   }
   
   @media screen and (max-width: 768px) {
-    .logo {
-        display: none; /* Oculta el logo en pantallas más grandes */
+  
+    .logo img {
+      height: auto; /* Ajusta la altura del logo según tus necesidades */
+      max-width: 200px;
+      margin: 5%;
+      padding-top: 1em;
     }
+
   }
+  
   img {
     max-width: 100%; /*lo hacemos para evitar que la imagen se desborde*/
   }
@@ -55,6 +61,11 @@
     transform: translateY(-100%);
   }
   
+  .main-nav {
+    background-color:#EB4138;
+    height: 120px;
+  }
+
   .main-menu--show{
     transform: translateY(0); /*con esto consigo que el menu se quede en el centro*/
   } /*Esta es la clase que vamos a cambiar desde javascript para que se muestre el menu clickando en el menu hamburguesa*/
